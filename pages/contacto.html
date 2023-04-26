@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" href="../img/logoframar.ico">
+    <title>FRAMAR Autopartes</title>
+</head>
+
+<body>
+    <!-- inicio de navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <img src="../img/logoframar.png" alt="Logo" style="width:100px;">
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- fin de navbar -->
+
+
+    <!-- inicio de jumbotrom -->
+    <div class="jumbotron">
+        <h1>REPUESTOS ORIGINALES Y ALTERNATIVOS</h1>
+        <p>Vicente Lopez 1874 - Olavarria - Buenos Aires</p>
+        <button type="button" class="btn btn-danger" href="https://walink.co/464f41">mas info</button>
+    </div>
+    <!-- fin de jumbotrom -->
+
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">CONTACTANOS</h2>
+        <!--Section description-->
+
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Nombre</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Asunto</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2"
+                                    class="form-control md-textarea"></textarea>
+                                <label for="message">Mensaje</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Vicente Lopez 1874 , Olavarria, Bs As</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>2284 - 683603</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>autopartesframar@hotmail.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+    </section>
+
+    <!-- inicio de fin de pagina -->
+    <div class="findepagina">
+        <h4>© 2023 FRAMAR Autopartes todos los derechos reservados.</h4>
+    </div>
+    <!-- fin de pagina -->
+
+    <!-- inicio de whatssap -->
+    <a href="https://walink.co/464f41" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <!-- fin de whatssap -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

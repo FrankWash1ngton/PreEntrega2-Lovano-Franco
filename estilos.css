@@ -1,0 +1,241 @@
+@font-face {
+    font-family: ethnocentric rg;
+    src: url(./font/ethnocentric\ rg.ttf)
+}
+
+@-webkit-keyframes scale-in-ver-center {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-ver-center {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: rgb(46, 44, 44);
+}
+
+.navbar {
+    background-color: black !important;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: ethnocentric rg;
+    font-size: 13px;
+    padding-left: 20px !important;
+}
+
+.nav-link:hover {
+    color: red !important;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.jumbotron {
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 115px !important;
+    font-family: ethnocentric rg;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 33px;
+}
+
+.jumbotron h1,
+p {
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.item {
+    height: 200px;
+    border: 1px solid white;
+    background-color: black;
+    padding: 15px;
+    animation-name: scale-in-ver-center;
+    animation-duration: 1s;
+}
+
+.item1 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+
+}
+
+.item1 p {
+    font-size: 15px;
+}
+
+.item2 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+
+}
+
+.item2 p {
+    font-size: 15px;
+}
+
+.item3 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+
+}
+
+.item3 p {
+    font-size: 15px;
+}
+
+.aside-left {
+    padding-right: 1px;
+    padding-left: 0px;
+    border: 2px solid white;
+
+}
+
+.aside-left p {
+    background-color: #dc3545;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 60px 20px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.aside-left h3 {
+    background-color: black;
+    font-size: 13px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.contenedor {
+    text-align: center;
+    border: 2px solid white;
+}
+
+h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    margin-right: 20px;
+}
+
+
+.aside-right {
+    padding-left: 1px;
+    padding-right: 0px;
+}
+
+h2 {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: ethnocentric rg;
+}
+
+.fixed-bottom {
+    background-color: #dc3545;
+}
+
+.presu {
+    padding: 10px;
+    font-family: ethnocentric rg;
+    font-size: 8px;
+}
+
+.separador {
+    border: 2px solid black;
+}
+
+
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: green;
+    color: #fff;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 7px;
+    border-radius: 50%;
+    z-index: 99;
+    animation-name: scale-in-ver-center;
+    animation-duration: 1s;
+}
+
+.whatsapp-btn:hover {
+    color: black;
+}
+
+
+.findepagina {
+    background-color: #dc3545;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.findepagina h4 {
+    font-size: 10px;
+}
+
+.mb-4 {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #dc3545;
+    border: none;
+}
