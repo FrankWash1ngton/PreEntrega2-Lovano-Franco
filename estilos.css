@@ -31,6 +31,82 @@
     }
 }
 
+@-webkit-keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotate-scale-down-diag-2 {
+    0% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+}
+
+@keyframes rotate-scale-down-diag-2 {
+    0% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+}
+
+
+
+
+
 body {
     background-color: rgb(46, 44, 44);
 }
@@ -61,6 +137,11 @@ body {
     color: white;
 }
 
+.logoframar {
+    animation-name: rotate-scale-down-diag-2;
+    animation-duration: 1s;
+}
+
 .jumbotron {
     background-image: url(./img/banner.jpg);
     background-size: cover;
@@ -74,6 +155,8 @@ body {
 
 h1 {
     font-size: 33px;
+    animation-name: tracking-in-contract-bck-top;
+    animation-duration: 2s;
 }
 
 .jumbotron h1,
