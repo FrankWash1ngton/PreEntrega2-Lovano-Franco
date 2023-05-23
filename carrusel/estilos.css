@@ -1,0 +1,398 @@
+@font-face {
+    font-family: ethnocentric rg;
+    src: url(./font/ethnocentric\ rg.ttf)
+}
+
+@-webkit-keyframes scale-in-ver-center {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-ver-center {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px) translateY(-300px);
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateY(0);
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotate-scale-down-diag-2 {
+    0% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+}
+
+@keyframes rotate-scale-down-diag-2 {
+    0% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+
+    50% {
+        -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+}
+
+
+
+
+
+body {
+    background-color: rgb(46, 44, 44);
+}
+
+.navbar {
+    background-color: black !important;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: ethnocentric rg;
+    font-size: 13px;
+    padding-left: 20px !important;
+}
+
+.nav-link:hover {
+    color: red !important;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.logoframar {
+    animation-name: rotate-scale-down-diag-2;
+    animation-duration: 1s;
+}
+
+.jumbotron {
+    background-image: url(./img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-top: 115px !important;
+    font-family: ethnocentric rg;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 33px;
+    animation-name: tracking-in-contract-bck-top;
+    animation-duration: 2s;
+}
+
+.jumbotron h1,
+p {
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.item {
+    height: 200px;
+    border: 1px solid white;
+    background-color: black;
+    padding: 15px;
+    animation-name: scale-in-ver-center;
+    animation-duration: 1s;
+}
+
+.item1 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+
+}
+
+.item1 p {
+    font-size: 15px;
+}
+
+.item2 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+
+}
+
+.item2 p {
+    font-size: 15px;
+}
+
+.item3 {
+    font-size: 75px;
+    color: white;
+    text-align: center;
+
+}
+
+.item3 p {
+    font-size: 15px;
+}
+
+.aside-left {
+    padding-right: 1px;
+    padding-left: 0px;
+    border: 2px solid white;
+
+}
+
+.aside-left p {
+    background-color: #dc3545;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 60px 20px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.aside-left h3 {
+    background-color: black;
+    font-size: 13px;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.contenedor {
+    text-align: center;
+    border: 2px solid white;
+}
+
+h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    margin-right: 20px;
+}
+
+
+.aside-right {
+    padding-left: 1px;
+    padding-right: 0px;
+}
+
+h2 {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: ethnocentric rg;
+}
+
+.fixed-bottom {
+    background-color: #dc3545;
+}
+
+.presu {
+    padding: 10px;
+    font-family: ethnocentric rg;
+    font-size: 8px;
+}
+
+.separador {
+    border: 2px solid black;
+}
+
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: green;
+    color: #fff;
+    font-size: 25px;
+    padding-left: 25px;
+    padding-right: 7px;
+    border-radius: 50%;
+    z-index: 99;
+    animation-name: scale-in-ver-center;
+    animation-duration: 1s;
+}
+
+.whatsapp-btn:hover {
+    color: black;
+}
+
+
+.findepagina {
+    background-color: #dc3545;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.findepagina h4 {
+    font-size: 16px;
+}
+
+.mb-4 {
+    color: white;
+}
+
+.btn-primary {
+    background-color: #dc3545;
+    border: none;
+}
+
+.titulomarcas{
+
+}
+
+.wrapper {
+    display: flex;
+    padding-top: 20px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto; /* Añade esta línea para centrar horizontalmente */
+    justify-content: center; /* Añade esta línea para centrar horizontalmente */
+    align-items: center; /* Añade esta línea para centrar verticalmente */
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 90px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 10px;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
