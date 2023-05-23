@@ -282,7 +282,6 @@ h2 {
 }
 
 
-
 .whatsapp-btn {
     position: fixed;
     bottom: 30px;
@@ -311,7 +310,7 @@ h2 {
 }
 
 .findepagina h4 {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .mb-4 {
@@ -321,4 +320,79 @@ h2 {
 .btn-primary {
     background-color: #dc3545;
     border: none;
+}
+
+.titulomarcas{
+
+}
+
+.wrapper {
+    display: flex;
+    padding-top: 20px;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto; /* Añade esta línea para centrar horizontalmente */
+    justify-content: center; /* Añade esta línea para centrar horizontalmente */
+    align-items: center; /* Añade esta línea para centrar verticalmente */
+}
+
+.wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover {
+    background: #f2f2f2;
+}
+
+.wrapper i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 90px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 10px;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
 }
