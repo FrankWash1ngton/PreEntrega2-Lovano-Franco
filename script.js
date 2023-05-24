@@ -83,4 +83,4 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-startAutoSlide(); // Iniciar el auto desplazamiento al cargar la página
+startAutoSlide(1); // Iniciar el auto desplazamiento al cargar la página
