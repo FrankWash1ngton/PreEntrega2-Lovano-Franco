@@ -10,7 +10,6 @@ let isDragStart = false,
 let autoSlideInterval;
 
 const showHideIcons = () => {
-  // Mostrar u ocultar los íconos prev/next según el valor de desplazamiento del carrusel
   let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
   arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
   arrowIcons[1].style.display =
@@ -31,7 +30,6 @@ const autoSlide = () => {
   let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
 
   if (carousel.scrollLeft >= scrollWidth) {
-    // Si el carrusel ha llegado al final, ajustar el valor para volver a mostrar la imagen inicial
     carousel.scrollLeft -= scrollWidth;
   } else {
     carousel.scrollLeft += firstImgWidth;
@@ -41,7 +39,7 @@ const autoSlide = () => {
 };
 
 const startAutoSlide = () => {
-  autoSlideInterval = setInterval(autoSlide, 2000); // Cambiar la imagen cada 3 segundos (ajusta el intervalo según tus necesidades)
+  autoSlideInterval = setInterval(autoSlide, 1000); 
 };
 
 const stopAutoSlide = () => {
@@ -52,7 +50,7 @@ const dragStart = (e) => {
   isDragStart = true;
   prevPageX = e.pageX || e.touches[0].pageX;
   prevScrollLeft = carousel.scrollLeft;
-  stopAutoSlide(); // Detener el auto desplazamiento cuando se inicia el arrastre
+  stopAutoSlide(); //
 };
 
 const dragging = (e) => {
@@ -71,7 +69,7 @@ const dragStop = () => {
 
   if (!isDragging) return;
   isDragging = false;
-  startAutoSlide(); // Iniciar el auto desplazamiento después de soltar el arrastre
+  startAutoSlide();
 };
 
 carousel.addEventListener("mousedown", dragStart);
@@ -83,4 +81,4 @@ carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
-startAutoSlide(1); // Iniciar el auto desplazamiento al cargar la página
+startAutoSlide(); 
