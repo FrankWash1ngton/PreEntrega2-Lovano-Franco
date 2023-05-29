@@ -305,13 +305,14 @@ h2 {
 
 
 .findepagina {
-    background-color: #dc3545;
+    background-color: black;
     margin: 0;
     text-align: center;
     margin-top: 10px;
 }
 
 .findepagina h4 {
+    color: white;
     font-size: 16px;
 }
 
